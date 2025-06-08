@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Umar Ayoub | Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: 'Inter', sans-serif;
+      padding-top: 70px; /* for fixed navbar */
+    }
+    .navbar {
+      background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1030;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    }
+    .navbar-brand, .nav-link {
+      color: #e0e0e0 !important;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .nav-link:hover {
+      color: #1abc9c !important;
+    }
+    header .intro-text {
+      padding: 40px 10px;
+    }
+    header .intro-text h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #1abc9c;
+      margin-bottom: 15px;
+    }
+    header .intro-text h4 {
+      font-weight: 500;
+      margin-bottom: 20px;
+      color: #ccc;
+    }
+    header .intro-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 600px;
+    }
+    header img.profile-pic {
+      max-width: 300px;
+      border-radius: 15px;
+      border: 4px solid #1abc9c;
+      box-shadow: 0 0 15px #1abc9caa;
+      display: block;
+      margin: auto;
+      max-width: 100%;
+      height: auto;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    .achievements .achievement {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+    .achievements .achievement img {
+      width: 200px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #1abc9caa;
+    }
+    .achievements .achievement div {
+      max-width: 600px;
+    }
+    .achievements h2 {
+      margin-bottom: 40px;
+      color: #1abc9c;
+    }
+    .contact {
+      text-align: center;
+    }
+    .contact h2 {
+      color: #1abc9c;
+      margin-bottom: 30px;
+    }
+    .contact p {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .btn-primary {
+      background-color: #1abc9c;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #159a86;
+    }
+    @media (max-width: 767px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      header .intro-text, header img.profile-pic {
+        max-width: 100%;
+        padding: 0 15px;
+      }
+      .achievements .achievement {
+        flex-direction: column;
+        text-align: center;
+      }
+      .achievements .achievement img, .achievements .achievement div {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">UMAR AYOUB</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Intro Section -->
+  <header id="home" class="container d-flex flex-wrap align-items-center justify-content-center gap-4">
+    <div class="intro-text col-lg-6">
+      <h1>Hi, I am Umar Ayoub</h1>
+      <h4>Passionate Developer | AI Enthusiast | Innovator</h4>
+      <p>A passionate developer with a love for AI, Machine Learning, and technology. I thrive on solving real-world problems through smart, data-driven solutions and innovative ideas. With a strong background in programming and AI, I enjoy building intelligent systems, optimizing models, and exploring new technologies. For me, coding is about creating meaningful solutions that make an impact. Let’s connect and innovate together!</p>
+        <a href="Umar ayoub_resume.pdf" class="btn btn-primary mt-3" target="_blank">Download Resume</a>
+
+    </div>
+    <div class="col-lg-4">
+      <!-- Replace below src with your image file in your project folder -->
+      <img src="Umar Ayoub.jpeg" alt="Umar Ayoub" class="profile-pic" />
+    </div>
+  </header>
+
+  <!-- Achievements Section -->
+  <section class="achievements container" id="services">
+    <h2>Achievements</h2>
+
+    <div class="achievement">
+      <!-- Replace with your actual achievement image in images folder -->
+      <img src="achievment1.jpg" alt="Speed Programming Champion" />
+      <div>
+        <h5>Speed Programming Champion - Annual Tech Competition 2025</h5>
+        <p>I secured 1st place in the Speed Programming competition at the Annual Tech Competition 2025, hosted by UET Mardan. As part of Team USI (Umar Ayoub, Muhammad Ismail, and Saad Ali Shah), we demonstrated exceptional problem-solving skills under time constraints.</p>
+      </div>
+    </div>
+
+    <div class="achievement">
+      <!-- Replace with your actual achievement image in images folder -->
+      <img src="achievment 2.jpg" alt="8-Week Online Coding Internship" />
+      <div>
+        <h5>8-Week Online Coding Internship - AICP</h5>
+        <p>I completed an 8-week online coding internship with AICP, enhancing my problem-solving and coding skills. The internship provided hands-on experience in programming, allowing me to tackle real-world challenges and improve my analytical thinking.</p>
+      </div>
+    </div>
+
+    <div class="achievement">
+      <!-- Replace with your actual achievement image in images folder -->
+      <img src="achievment 3.jpg" alt="8-Week Online Coding Internship" />
+      <div>
+        <h5>Mental Disorder Detection using AI Presented at First National Conference 2025</h5>
+        <p>I presented my AI-based project titled "Mental Disorder Detection using Artificial Intelligence" at the First National Conference 2025 held from April 11 to 13, 2025, at Wah Medical College, Wah Cantt. The project focused on using machine learning techniques to identify signs of mental disorders through data analysis and intelligent prediction models. This opportunity not only allowed me to share my work on a national platform but also helped me gain valuable feedback from professionals in the medical and AI fields.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact container" id="contact">
+    <h2>Contact Me</h2>
+    <p>📞 0343-4810063</p>
+    <p>📧 uayoub181003@gmail.com</p>
+    <a href="mailto:uayoub181003@gmail.com" class="btn btn-primary">Email Me</a>
+  </section>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
